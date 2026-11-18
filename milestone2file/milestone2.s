@@ -49,4 +49,9 @@ main: #funcao principal
 
         loop ciclo_contentor #caso o contador de ciclos %ecx !=0 salta para o rotulo 'ciclo_contentor'
         
+    #restaurar os registos utilizados
+    popl %edi
+    popl %esi
+    popl %ebx
+    
     ret #fim da funcao principal
